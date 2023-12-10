@@ -2,7 +2,7 @@ import React from 'react'
 
 const Chat = () => {
   return (
-    <div>
+    <div className='chat'>
       <h1>chat</h1>
     </div>
   )
