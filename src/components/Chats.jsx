@@ -1,6 +1,7 @@
 import React from 'react'
 import Add from '../img/10.jpg'
 
+
 const Chats = () => {
   return (
     <div className='userChat'>
@@ -11,7 +12,7 @@ const Chats = () => {
         </div>
 
       </div>
-  )
+  );
 }
 
 export default Chats
