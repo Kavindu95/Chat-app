@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# U-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+U-app is a chat application built using React.js and Firebase. It leverages Firestore as the backend database to store user information and chat data, enabling real-time communication between users.
 
-## Available Scripts
+## Pages/Components
 
-In the project directory, you can run:
+### Home
+Displays the main interface of the chat application, featuring a sidebar and chat window.
 
-### `npm start`
+### Login
+Provides a login form for existing users to sign in using their email and password.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Register
+Allows new users to sign up by providing necessary details such as display name, email, password, and an avatar image.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Components
 
-### `npm test`
+#### Chat
+The `Chat` component represents the main chat interface within the U-app, providing users with the ability to interact in real-time conversations or chat rooms.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Responsibilities
+- **Display Messages:** Renders and displays messages exchanged between users within a specific chat room.
+- **User Interaction:** Allows users to send messages, view conversation history, and interact within the chat environment.
+- **Real-Time Updates:** Updates the chat interface in real-time as new messages are sent or received.
 
-### `npm run build`
+##### Structure and Features
+- **Message Display:** Displays individual messages, including sender's name, message content, timestamp, etc.
+- **Input Field:** Provides an input field for users to type and send messages.
+- **Scrollable Chat History:** Enables users to view the conversation history and scroll through previous messages.
+- **Real-Time Updates:** Utilizes Firebase or other real-time database features to update the chat interface instantly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Chats
+The `Chats` component manages the list of available chats or conversations, allowing users to navigate between different chat rooms.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Input
+The `Input` component renders an input field allowing users to type and send messages within a chat.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Message
+The `Message` component represents an individual message within a chat conversation, displaying the sender's name, message content, timestamp, etc.
 
-### `npm run eject`
+#### Messages
+The `Messages` component acts as a container holding multiple `Message` components, displaying the conversation history within a chat window.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Navbar
+The `Navbar` component contains links, buttons, or other elements for global actions and navigation within the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Search
+The `Search` component provides functionality for users to search for specific messages, users, or content within the chat application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Sidebar
+The `Sidebar` component renders a sidebar interface displaying user information, chat rooms, settings, or additional functionalities to enhance the user experience.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
+- React.js
+- Firebase (Authentication, Firestore, Storage)
 
-## Learn More
+## Backend
+Firestore is utilized as the backend database to store user information, chat messages, and application data, providing real-time synchronization across users.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to Run the App Locally
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Configure Firebase settings and add your Firebase configuration details.
+4. Start the app using `npm start`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, feel free to submit pull requests or open issues.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License - see the [LICENSE](/src/Licence.txt) file for details.
