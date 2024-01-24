@@ -4,9 +4,11 @@ import { onAuthStateChanged } from "firebase/auth";
 
 export const AuthContext = createContext();
 
+//manage the authentication state using onAuthStateChanged
 export const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState({});
 
+  //update current users's state
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
@@ -18,6 +20,7 @@ export const AuthContextProvider = ({ children }) => {
     };
   }, []);
   //components =children
+  //passed the currentuser obj with info
   return (
     <AuthContext.Provider value={{ currentUser }}>
       {children} 

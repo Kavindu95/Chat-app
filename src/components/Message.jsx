@@ -15,7 +15,7 @@ const Message = ({message}) =>  {
 
 
 
-  console.log(message)
+  //console.log(message)
   return (
     <div
     ref={ref}

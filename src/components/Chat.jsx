@@ -8,7 +8,7 @@ import { ChatContext } from '../context/ChatContext';
 
 const Chat = () => {
 
-  const { data } = useContext(ChatContext);
+  const { data } = useContext(ChatContext); //data passed(Provider) and consume
 
   return (
     <div className="chat">
